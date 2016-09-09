@@ -353,7 +353,7 @@ var ReactTelephoneInput = React.createClass({
     _fillDialCode() {
         // if the input is blank, insert dial code of the selected country
         if(this.refs.numberInput.value === '+') {
-            this.setState({formattedNumber: '+' + this.state.selectedCountry.dialCode});
+            this.setState({formattedNumber: '+' });
         }
     },
     _getHighlightCountryIndex(direction) {
